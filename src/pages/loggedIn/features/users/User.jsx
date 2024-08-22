@@ -5,6 +5,8 @@ import { useNavigate } from 'react-router-dom'
 
 const User = ({ user }) => {
 
+    if (user.role === 6000) return;
+
     const isActive = user.active
     const userId = getAuthUserId()
 

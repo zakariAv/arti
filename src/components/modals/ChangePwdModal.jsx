@@ -45,7 +45,7 @@ const ChangePwdModal = ({ closeModal }) => {
         <Formik
           initialValues={{ password: "", newPassword: "", repeatPassword: "" }}
           validationSchema={changePasswordSchema}
-          validateOnChange={false}
+          validateOnChange={true}
           validateOnBlur={false}
           onSubmit={(values) => mutate(values)}
         >
