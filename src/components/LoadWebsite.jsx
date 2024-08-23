@@ -15,7 +15,7 @@ const LoadWebsite = () => {
                     transition={{ duration: 2, repeat: Infinity }}>
                     <AiOutlineLoading3Quarters className='text-[70px]' />
                 </motion.div>
-                <div className='text-center'>Loading..</div>
+                <div className='text-center font-bold'>Loading..</div>
             </div>
         </motion.div>
     );

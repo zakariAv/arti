@@ -21,7 +21,7 @@ const PublicArticles = () => {
     <ErrorPage message={error.response.data.message || error.message} />
   </div>
 
-  if (!articles.length) {
+  if (!articles?.length) {
     return <div className=" h-screen flex-center">
       <p className="text-2xl md:text-3xl font-semibold ">There is no public articles to show!</p>
     </div>
